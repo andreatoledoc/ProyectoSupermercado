@@ -4,16 +4,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def articulos (self):
-    articulos = Articulo (nombre = "Galletas", codigo ='21111', categoria = "Alimentacion" )
-    articulos.save ()
-
-    documentoDeTexto = f' Articulo: {articulos.nombre} Codigo: {articulos.codigo} Categoria: {articulos.categoria}'
-
-    return HttpResponse(documentoDeTexto)
+def articulos (request):
+    return render (request, 'articulos.html')
 
 def inicio (request):
-    return HttpResponse ('Vista de Inicio')
+    return render(request, "AppAdminsitracion/inicio.html")
 
 def proveedores (request):
     return HttpResponse ('Vista de proveedores')
