@@ -17,7 +17,7 @@ class Articulo (models.Model):
     codigo = models.IntegerField()
     categoria = models.CharField(max_length=40)
 
-class Empleado (models.model):
+class Empleado (models.Model):
     nombre = models.CharField(max_length=40)
     direccion = models.CharField (max_length=50)
     email = models.EmailField ()
