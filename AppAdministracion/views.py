@@ -5,19 +5,19 @@ from django.http import HttpResponse
 # Create your views here.
 
 def articulos (request):
-    return render (request, 'articulos.html')
+    return render (request, 'AppAdministracion/articulos.html')
 
 def inicio (request):
-    return render(request, "AppAdminsitracion/inicio.html")
+    return render(request, "AppAdministracion/inicio.html")
 
 def proveedores (request):
-    return HttpResponse ('Vista de proveedores')
+    return render(request, "AppAdministracion/proveedores.html")
 
 def clientes (request):
-    return HttpResponse ('Vista de clientes')
+    return render(request, "AppAdministracion/clientes.html")
 
 def empleados (request):
-    return HttpResponse ('Vista de empleados')
+    return render(request, "AppAdministracion/empleados.html")
 
 
 
