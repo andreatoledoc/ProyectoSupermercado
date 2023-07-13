@@ -4,8 +4,13 @@
 
 {% block contenidoQueCambia %}
 
+    {% if miFormulario.errors %}
+    <p style="color: red;"> Están mal los datos, revisar</p>
+    {% endif %}
+
+    <p>Estamos buscando la categoria : {{categoria}}</p>
+
     {% if articulos %}
-        <p>Estamos buscando la categoria : {{categoria}}</p>
         <ul>
             {% for articulo in articulos %}
                 <li>{{articulo.nombre}}</li>
@@ -21,7 +26,3 @@
     <p style="color: red;">{{respuesta}}</p>
 
 {% endblock %}
-
-
-
-
