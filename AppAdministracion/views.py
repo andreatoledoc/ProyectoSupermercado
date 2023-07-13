@@ -110,8 +110,8 @@ def buscar (request):
     if request.GET['categoria']:
         #respuesta = f"Estoy buscando la categoria: {request.GET['categoria']}"
         categoria = request.GET['categoria']
-        articulo = Articulo.objects.filter(categoria__icontains = categoria)
-        return render (request, 'AppAdministracion/inicio.html', {'articulo': articulo, 'categoria':categoria})
+        articulos = Articulo.objects.filter(categoria__icontains = categoria)
+        return render (request, 'AppAdministracion/inicio.html', {'articulos': articulos, 'categoria':categoria})
     else:
         respuesta = "No enviaste datos"
     return render (request, 'AppAdministracion/inicio.html', {'respuesta': respuesta})

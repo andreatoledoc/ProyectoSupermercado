@@ -8,9 +8,9 @@
         <p>Estamos buscando la categoria : {{categoria}}</p>
         <ul>
             {% for articulo in articulos %}
-                <li>{{articulo.nombre}}</li>
-                <li>{{articulo.codigo}}</li>
-                <li>{{articulo.categoria}}</li>
+                <li> {{articulo.nombre}} </li>
+                <li> {{articulo.codigo}} </li>
+                <li> {{articulo.categoria}} </li>
             {% endfor %}
         </ul>
     {% else %}
