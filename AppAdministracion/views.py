@@ -91,11 +91,11 @@ def proveedores (request):
 
         if miFormulario.is_valid:
             informacion = miFormulario.cleaned_data #Limpiamos la forma en que recibimos la información
-            proveedorFormulario = Proveedor(nombre = informacion['nombre'], 
+            proveedor = Proveedor(nombre = informacion['nombre'], 
                                direccion = informacion['direccion'], 
                                email = informacion ['email'], 
                                telefono = informacion ['telefono'])
-            proveedorFormulario.save()
+            proveedor.save()
         return render (request, 'AppAdministracion/inicio.html')
     
     else:
