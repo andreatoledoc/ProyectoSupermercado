@@ -12,6 +12,4 @@ Los archivos html heredan de padre.html la estructura general de la pagina
 Por otra parte, se creo un formulario para cada una de las clases, para que se pudieran cargar datos desde la página, dentro del archivo forms.py
 Estos datos se guardarán en la base de datos db.sqlite
 
-El superusuario que tiene acceso total y control administratido sobre el sistema es andi, y la contraseña coder54955
-
 Finalmente, se creo una vista para poder buscar categorias de los artículos del supermercado. Luego de buscar cierta categória en la base de datos, si esta existe, se mostrará cuál es el nombre y código del producto. En caso de que no exista, se especifica que no hay datos con la descripción que se desea buscar
