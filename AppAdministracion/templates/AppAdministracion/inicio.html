@@ -4,21 +4,8 @@
 
 {% block contenidoQueCambia %}
 
-    {% if articulos %}
-        <p>Estamos buscando la categoria : {{categoria}}</p>
-        <ul>
-            {% for articulo in articulos %}
-                <li> {{articulo.nombre}} </li>
-                <li> {{articulo.codigo}} </li>
-                <li> {{articulo.categoria}} </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <p>No hay datos con esa descripcion</p>
+    <p>BIENVENIDOS</p>
 
-    {% endif %}
-
-    <p style="color: red;">{{respuesta}}</p>
 
 {% endblock %}
 
